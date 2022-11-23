@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin069cypbky" source-language="sk-SK" target-language="sk-SK" datatype="plaintext">
+    <body>
+      <trans-unit id="71d81332b8a84e283eb7182134874d45">
+        <source>Pay by 24pay gateway.</source>
+        <target>Zaplatiť cez 24-pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d021f450987a0c601466def9a115c745">
+        <source>24pay gateway</source>
+        <target>24-pay platobná brána</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="5b638bda4b900df2a85519b41c94eed6">
+        <source>(Pay with card or internet banking)</source>
+        <target>(Zaplatiť kartou alebo cez internet banking)</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

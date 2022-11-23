@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin069cypbky" source-language="sk-SK" target-language="sk-SK" datatype="plaintext">
+    <body>
+      <trans-unit id="dda035a8b346a0198197e93087683394">
+        <source>This module allows you to accept payments with 24-pay payment gateway</source>
+        <target>Tento modul Vám umožní príjimáť platby prostredníctom platobnej brány 24-pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bc620398705edb577f995b88166b354b">
+        <source>Payment gateway 24-Pay allows customers to pay with card or through internet banking.</source>
+        <target>Platobná brána 24-pay umožňuje zákazníkom platiť katrou a cez internet banking.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f8469d53a7a07e64f519b1cd5db9fc48">
+        <source>High level of security, smooth online payment processing, supports 3D Secure security standards.</source>
+        <target>Vysoká úroveň zabezpečenia, plynulé spracovanie platieb online, podpora 3D Secure bezpečnostných štandardov.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="8cf04a9734132302f96da8e113e80ce5">
+        <source>Home</source>
+        <target>Domov</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0cbc6611f5540bd0809a388dc95a615b">
+        <source>Test</source>
+        <target>Test</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2e20cee2c16a5506be9d72242cc703b4">
+        <source>24-pay Settings</source>
+        <target>Nastavenie 24-pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b7c67a0ea54927262c419bc38c5cbe16">
+        <source>TEST ENVIROMENT</source>
+        <target>Testovacie prostredie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Áno</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>Nie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="18e48bbdf6d326bd88d3ebb99ad7515d">
+        <source>MID</source>
+        <target>MID</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="63f2f56a8b83f8d8e4d4c9f3595f248d">
+        <source>E-ESHOP ID</source>
+        <target>E-shop Id</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3b5949e0c26b87767a4752a276de9570">
+        <source>KEY</source>
+        <target>Kľúč</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="f8c7d2585e4360c973d4576b2e6e316b">
+        <source>Send payment status email to client</source>
+        <target>Chcete posielat klientovi notifikačný email o stave platby z 24-pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="d0a395fe37c9f17b385adbaee284034b">
+        <source>Receive notification email from 24-pay</source>
+        <target>Chcete dostávať notifikačný email o platbe z 24-pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="75fd9e2aecec3c37b453c73596d7b7c0">
+        <source>Email for notification</source>
+        <target>Notifikačný email</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f56d9cf8d4afc0844563bafa77b26e6">
+        <source>Email address is missing</source>
+        <target>Parameter Email je povinný!</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e401cc0ec55a678c7f23e61b538714b4">
+        <source>ADVANCE SETTING</source>
+        <target>Pokročilé nastavenia</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="9d41c103ad9b89182ce071187315082d">
+        <source>DEBUG MODULE PAYMENT</source>
+        <target>Odladiť modul</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="669ec4d10e127e21fb4adaac20401966">
+        <source>Last step will show all data and require confirmation</source>
+        <target>V poslednom kroku sa zobrazia všetky údaje a je potrebné potvrdiť odoslanie</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c8ea53bded79ebeb28c3560cc8eca3f1">
+        <source>In case you set the value to</source>
+        <target>V prípade ak nastavíte hodnotu na</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6f3a096228f509da96712dabcb8aae67">
+        <source>responsibility for the problems caused by this setting is yours.</source>
+        <target>zodpovednosť za prípadne problémy je na strane obchodníka.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="4cf4e6c9281d2f1dd5223999cf6a2cb0">
+        <source>CREATE ORDER ON FAIL PAYMENT</source>
+        <target>Vytvoriť objednávku pri neúspešnej platbe</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="654866693fd91ce8e9764a218f569918">
+        <source>Recommended</source>
+      <target>Odporúčamé</target>
+      <note>Line: </note>
+      </trans-unit>
+    <trans-unit id="9dad7cf16d975b87e2b5fb9ba6568658">
+    <source>LOG PAYMENT NOTIFICATION</source>
+    <target>Zaznamenávať notifikačné správy</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+    <source>Save</source>
+    <target>Uložiť</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="a5e4162055a1c7a61cc32e004df7e510">
+    <source>24-pay Setting Test</source>
+    <target>Otestovať nastavenia 24-pay</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="07d799ec6591cb484ec0ab41afd0798a">
+    <source>Test result</source>
+    <target>Výsledok testu</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="31c6b3fdfaaa80dba2dbf92a4600524c">
+    <source>Sign</source>
+    <target>Podpisovanie</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="f34ed5ee787d8544a8ee8a79d1c3ac25">
+    <source>Active gates</source>
+    <target>Aktívne brány</target>
+    <note>Line: </note>
+    </trans-unit>
+    <trans-unit id="92f1eb2e79864b1fa237d9f02aa407ef">
+    <source>Click on button test below and launch the 24-pay settings test</source>
+    <target>Kliknite na tlačidlo "Test" pre spustenie testu.</target>
+    <note>Line: </note>
+    </trans-unit>
+    </body>
+  </file>
+</xliff>

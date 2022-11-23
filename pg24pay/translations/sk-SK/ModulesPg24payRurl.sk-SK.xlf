@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin069cypbky" source-language="sk-SK" target-language="sk-SK" datatype="plaintext">
+    <body>
+      <trans-unit id="680d75f9122560a05a66159fbfe5b0f9">
+        <source>Payment result</source>
+        <target>Výsledok platby</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="63c19b6e97a13e40daad456e669e316d">
+        <source>Order was successfully created</source>
+        <target>Objednávka bola úspešne vytvorená</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0cd81344c5ff2bdd70cd9766daee4e45">
+        <source>Thank you. Your payment was successful.</source>
+        <target>Ďakujeme. Vaša platba prebehla v poriadku.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1f6368d15f7c13c4e5e8f70c68c747f">
+        <source>Payment method:</source>
+        <target>Platobná metóda:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="3df406952f3377a5e419d4d63abb1b1d">
+        <source>Order number:</source>
+        <target>Číslo objednávky:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="b913dabf84a2fbeb711e6873210228b7">
+        <source>Order reference:</source>
+        <target>Označenie objednávky:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="60af0dde0c68d9ab21c9bc05e926ede3">
+        <source>Payment number:</source>
+        <target>Číslo platby:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6702a6e3bc2dce95c3e3b61fe578f29c">
+        <source>Amount:</source>
+        <target>Suma:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="0ef2b47177c121957d60b6bbe2f4416f">
+        <source>Payment status:</source>
+        <target>Stav platby:</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e0010a0a1a3259ab5c06a19bad532851">
+        <source>Paid</source>
+        <target>Zaplatená</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="73d669aa1b04785b75def7f6b2379dcc">
+        <source>Your payment was rejected.</source>
+        <target>Vaša platba bola neúspešná.</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="c1df6f50cd5fb3ea81af7a16054a64a2">
+        <source>Unpaid</source>
+        <target>Nezaplatená</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="6c5407865772b0a8e6f238066dd82956">
+        <source>Pay again</source>
+        <target>Zaplatiť znovu</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="de32502349a7154141e6cb0f087d87de">
+        <source>Thank you. Your payment was not processed at this moment, it is now in pending state. We will inform you about payment result later</source>
+        <target>Ďakujeme. Výsledok Vašej platby zatiaľ nie je známy. Platba je v stave čakajúca. O výsledku Vás budeme informovať</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="2d13df6f8b5e4c5af9f87e0dc39df69d">
+        <source>Pending</source>
+        <target>Čakajúca</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="e5a37fdd9a46e9f0d5fbfd4ecd96eced">
+        <source>THERE WAS AN ERROR ON PAYMENT RETURN. IF YOU SEE THIS TEXT PLEASE CONTACT MERCHANT.</source>
+        <target>Pri návrate z platobnej brány došlo k chybe. Prosím kontaktujte obchodníka.</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

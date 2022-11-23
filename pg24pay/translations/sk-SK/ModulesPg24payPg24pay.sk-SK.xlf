@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="admin069cypbky" source-language="sk-SK" target-language="sk-SK" datatype="plaintext">
+    <body>
+      <trans-unit id="cf1399db8b1a3589b98d13b5b9d83356">
+        <source>24pay</source>
+        <target>24pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="1a80d94ba4c25f798e9023267b912480">
+        <source>24pay official payment module</source>
+        <target>24pay oficiálny modul</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="69a1a3ad8dd5da6db3c4da838a0cf9c7">
+        <source>Are you sure you want to delete your details?</source>
+        <target>Naozaj chcete vymazať všetky údaje modulu?</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="597918f117c77906481ac33aee6acd69">
+        <source>Pay by 24pay</source>
+        <target>Zaplatiť cez 24pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="ba3c8884b182899b8c059f66a0772390">
+        <source>Pay by card or internet banking</source>
+        <target>Zaplatiť pomocou karty alebo cez internet banking</target>
+        <note>Line: </note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
