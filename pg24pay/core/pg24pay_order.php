@@ -36,10 +36,9 @@ class Pg24payOrder {
 
     private $signGenerator;
 
-    function __construct($cart){
+    function __construct($cart, $link){
 
         $this->signGenerator = new Pg24paySign();
-
         $this->mid = $this->signGenerator->mid;
         $this->eshopId = $this->signGenerator->eshopid;
 
@@ -63,8 +62,8 @@ class Pg24payOrder {
 
         $this->amount = number_format($cart->getOrderTotal(true, Cart::BOTH), 2, '.', '');
 
-        $this->rurl = Tools::getHttpHost(true) . __PS_BASE_URI__ . 'module/pg24pay/rurl';
-        $this->nurl = Tools::getHttpHost(true) . __PS_BASE_URI__ . 'module/pg24pay/nurl';
+        $this->rurl = $link->getModuleLink('pg24pay','rurl',[]);
+        $this->nurl = $link->getModuleLink('pg24pay','nurl',[]);
     }
 
     private function convertCountryCodeToIsoA3($isoa2code) {

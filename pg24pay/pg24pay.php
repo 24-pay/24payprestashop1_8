@@ -17,7 +17,7 @@ class Pg24pay extends PaymentModule
     {
         $this->name = 'pg24pay';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.0';
+        $this->version = '1.0.1';
         $this->ps_versions_compliancy = array('min' => '1.7.6', 'max' => _PS_VERSION_);
         $this->author = '24pay';
         $this->currencies = true;

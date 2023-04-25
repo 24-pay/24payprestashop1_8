@@ -36,7 +36,7 @@ class Pg24payOrderFromOrder {
 
     private $signGenerator;
 
-    function __construct($orderId){
+    function __construct($orderId, $link){
 
         $this->signGenerator = new Pg24paySign();
 
@@ -65,8 +65,8 @@ class Pg24payOrderFromOrder {
 
         $this->amount = number_format($objOrder->total_paid_real, 2, '.', '');
 
-        $this->rurl = Tools::getHttpHost(true) . __PS_BASE_URI__ . 'module/pg24pay/rurl';
-        $this->nurl = Tools::getHttpHost(true) . __PS_BASE_URI__ . 'module/pg24pay/ordernurl';
+        $this->rurl = $link->getModuleLink('pg24pay','rurl',[]);
+        $this->nurl = $link->getModuleLink('pg24pay','nurl',[]);
     }
 
     private function convertCountryCodeToIsoA3($isoa2code) {

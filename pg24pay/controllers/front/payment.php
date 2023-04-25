@@ -69,13 +69,13 @@ class Pg24payPaymentModuleFrontController extends ModuleFrontController
     
     private function paymentFromCart(){
 		
-        $order = new Pg24payOrder($this->context->cart);
+        $order = new Pg24payOrder($this->context->cart, $this->context->link);
         $order->signRequest();
         return $order;
     }
     
     private function paymentFromOrder($orderId){
-        $order = new Pg24payOrderFromOrder($orderId);
+        $order = new Pg24payOrderFromOrder($orderId, $this->context->link);
         $order->signRequest();
         return $order;
     }
