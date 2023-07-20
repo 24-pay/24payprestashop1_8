@@ -76,7 +76,23 @@ class Pg24pay extends PaymentModule
                 // ->setLogo(_MODULE_DIR_.'pg24pay/views/img/logo.png')
                 ->setAdditionalInformation($this->trans('Pay by card or internet banking', [], 'Modules.Pg24pay.Pg24pay'));
 
-        return [$newOption];
+        $paymentOptions = [$newOption];
+        if(Configuration::get('PAY24_SHOW_GOOGLE_PAY') == "1" ) {
+            $googlePay = new PaymentOption();
+            $googlePay->setModuleName($this->name)
+                ->setCallToActionText($this->trans('Pay by Google Pay', [], 'Modules.Pg24pay.Pg24pay'))
+                ->setAction($this->context->link->getModuleLink($this->name, 'paymentGoogle', array(), true));
+            $paymentOptions[] = $googlePay;
+        }
+
+        if(Configuration::get('PAY24_SHOW_APPLE_PAY') == "1" ) {
+            $applePay = new PaymentOption();
+            $applePay->setModuleName($this->name)
+                ->setCallToActionText($this->trans('Pay by Apple Pay', [], 'Modules.Pg24pay.Pg24pay'))
+                ->setAction($this->context->link->getModuleLink($this->name, 'paymentApple', array(), true));
+            $paymentOptions[] = $applePay;
+        }
+        return $paymentOptions;
 	}
 
     public function hookPayment($params) {
@@ -124,6 +140,8 @@ class Pg24pay extends PaymentModule
                 Configuration::updateValue('PAY24_ESHOP_ID', $_POST['PAY24_ESHOP_ID']);
                 Configuration::updateValue('PAY24_KEY', $_POST['PAY24_KEY']);
                 Configuration::updateValue('PAY24_NOTIFY_CLIENT', $_POST['PAY24_NOTIFY_CLIENT']);
+                Configuration::updateValue('PAY24_SHOW_GOOGLE_PAY', $_POST['PAY24_SHOW_GOOGLE_PAY']);
+                Configuration::updateValue('PAY24_SHOW_APPLE_PAY', $_POST['PAY24_SHOW_APPLE_PAY']);
                 Configuration::updateValue('PAY24_NOTIFY', $_POST['PAY24_NOTIFY']);
                 Configuration::updateValue('PAY24_NOTIFY_EMAIL', $_POST['PAY24_NOTIFY_EMAIL']);
                 Configuration::updateValue('PAY24_MODULE_DEBUG', $_POST['PAY24_MODULE_DEBUG']);
@@ -142,6 +160,8 @@ class Pg24pay extends PaymentModule
             'PAY24_KEY' => Configuration::get('PAY24_KEY'),
             'PAY24_NOTIFY_CLIENT' => Configuration::get('PAY24_NOTIFY_CLIENT'),
             'PAY24_NOTIFY' => Configuration::get('PAY24_NOTIFY'),
+            'PAY24_SHOW_GOOGLE_PAY' => Configuration::get('PAY24_SHOW_GOOGLE_PAY'),
+            'PAY24_SHOW_APPLE_PAY' => Configuration::get('PAY24_SHOW_APPLE_PAY'),
             'PAY24_NOTIFY_EMAIL' => Configuration::get('PAY24_NOTIFY_EMAIL'),
             'PAY24_MODULE_DEBUG' => Configuration::get('PAY24_MODULE_DEBUG'),
             'PAY24_REPAY' => Configuration::get('PAY24_REPAY'),

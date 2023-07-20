@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="pg24pay">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/pg24pay.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

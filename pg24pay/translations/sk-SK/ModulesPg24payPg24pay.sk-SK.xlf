@@ -27,6 +27,16 @@
         <target>Zaplatiť pomocou karty alebo cez internet banking</target>
         <note>Line: </note>
       </trans-unit>
+      <trans-unit id="2a34963732b2fea04f1417120be393ae">
+        <source>Pay by Google Pay</source>
+        <target>Zaplatiť cez Google Pay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="111999b13ca63380771744ea02c4906b">
+        <source>Pay by Apple Pay</source>
+        <target>Zaplatiť cez Apple Pay</target>
+        <note>Line: </note>
+      </trans-unit>
     </body>
   </file>
 </xliff>

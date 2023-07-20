@@ -62,6 +62,16 @@
         <target>Kľúč</target>
         <note>Line: </note>
       </trans-unit>
+      <trans-unit id="f92efbc02d3e658bdfa8d5d319c408e1">
+        <source>Show direct Google Pay payment option</source>
+        <target>Zobraziť priamo Platbu cez GooglePay</target>
+        <note>Line: </note>
+      </trans-unit>
+      <trans-unit id="fdde97c7ae99ff26a9dd8c9cb0e2935b">
+        <source>Show direct Apple Pay payment option</source>
+        <target>Zobraziť priamo Platbu cez Apple Pay</target>
+        <note>Line: </note>
+      </trans-unit>
       <trans-unit id="f8c7d2585e4360c973d4576b2e6e316b">
         <source>Send payment status email to client</source>
         <target>Chcete posielat klientovi notifikačný email o stave platby z 24-pay</target>

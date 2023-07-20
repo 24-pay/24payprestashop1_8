@@ -62,6 +62,28 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="PAY24_SHOW_GOOGLE_PAY">{l s='Show direct Google Pay payment option' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <span class="switch prestashop-switch fixed-width-lg">
+                            <input type="radio" name="PAY24_SHOW_GOOGLE_PAY" id="PAY24_SHOW_GOOGLE_PAY_on" value="1" {if $PAY24_SHOW_GOOGLE_PAY eq '1'}checked="checked"{/if}/>
+                            <label for="PAY24_SHOW_GOOGLE_PAY_on">{l s='Yes' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <input type="radio" name="PAY24_SHOW_GOOGLE_PAY" id="PAY24_SHOW_GOOGLE_PAY_off" value="0" {if $PAY24_SHOW_GOOGLE_PAY eq '0'}checked="checked"{/if}/>
+                            <label for="PAY24_SHOW_GOOGLE_PAY_off">{l s='No' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <a class="slide-button btn"></a>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="PAY24_SHOW_APPLE_PAY">{l s='Show direct Apple Pay payment option' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <span class="switch prestashop-switch fixed-width-lg">
+                            <input type="radio" name="PAY24_SHOW_APPLE_PAY" id="PAY24_SHOW_APPLE_PAY_on" value="1" {if $PAY24_SHOW_APPLE_PAY eq '1'}checked="checked"{/if}/>
+                            <label for="PAY24_SHOW_APPLE_PAY_on">{l s='Yes' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <input type="radio" name="PAY24_SHOW_APPLE_PAY" id="PAY24_SHOW_APPLE_PAY_off" value="0" {if $PAY24_SHOW_APPLE_PAY eq '0'}checked="checked"{/if}/>
+                            <label for="PAY24_SHOW_APPLE_PAY_off">{l s='No' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <a class="slide-button btn"></a>
+                        </span>
+                    </div>
+
+                    <div class="form-group">
                         <label for="PAY24_NOTIFY_CLIENT">{l s='Send payment status email to client' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
                         <span class="switch prestashop-switch fixed-width-lg">
                             <input type="radio" name="PAY24_NOTIFY_CLIENT" id="PAY24_NOTIFY_CLIENT_on" value="1" {if $PAY24_NOTIFY_CLIENT eq '1'}checked="checked"{/if}/>
