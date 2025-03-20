@@ -82,6 +82,11 @@ class Pg24payInstall{
                 Configuration::updateValue('PAY24_OK',$OK_state->id);
             }
         }
+        else {
+            $OK_state = new OrderState(Configuration::get('PAY24_OK'));
+            $OK_state->deleted = false;
+            $OK_state->update();
+        }
 
 
 
@@ -111,6 +116,11 @@ class Pg24payInstall{
                 Configuration::updateValue('PAY24_FAIL',$FAIL_state->id);
             }
         }
+        else {
+            $FAIL_state = new OrderState(Configuration::get('PAY24_FAIL'));
+            $FAIL_state->deleted = false;
+            $FAIL_state->update();
+        }
 
 
 
@@ -139,6 +149,11 @@ class Pg24payInstall{
                 $this->copyIcon($PENDING_state->id);
                 Configuration::updateValue('PAY24_PENDING',$PENDING_state->id);
             }
+        }
+        else {
+            $PENDING_state = new OrderState(Configuration::get('PAY24_PENDING'));
+            $PENDING_state->deleted = false;
+            $PENDING_state->update();
         }
     }
 

@@ -17,7 +17,7 @@ class Pg24pay extends PaymentModule
     {
         $this->name = 'pg24pay';
         $this->tab = 'payments_gateways';
-        $this->version = '1.0.1';
+        $this->version = '1.0.2';
         $this->ps_versions_compliancy = array('min' => '1.7.6', 'max' => _PS_VERSION_);
         $this->author = '24pay';
         $this->currencies = true;
@@ -33,15 +33,24 @@ class Pg24pay extends PaymentModule
     }
 
     public function install(){
-        if (!parent::install() || !$this->registerHook('payment') || !$this->registerHook('paymentOptions')
-        || !$this->registerHook('displayRightColumn') || !$this->registerHook('displayLeftColumn') || !$this->registerHook('displayFooter')) {
-            return false;
-        }
+        try {
 
-        include_once _PS_MODULE_DIR_.$this->name.'/core/pg24pay_install.php';
-        $pay24_install = new Pg24payInstall();
-        $pay24_install->install();
-        return true;
+            if (!parent::install() || !$this->registerHook('payment') || !$this->registerHook('paymentOptions')
+            || !$this->registerHook('displayRightColumn') || !$this->registerHook('displayLeftColumn') || !$this->registerHook('displayFooter')) {
+                return false;
+            }
+
+            include_once _PS_MODULE_DIR_.$this->name.'/core/pg24pay_install.php';
+            $pay24_install = new Pg24payInstall();
+            $pay24_install->install();
+            Logger::addLog("Install module pg24pay OK " , 1, null, null, null);
+
+            return true;
+        } catch (Exception $e) {
+            echo 'Install module pg24pay caught exception: ',  $e->getMessage(), "\n";
+            Logger::addLog("Install caught exception:: " . $e->getMessage(), 3, null, null, null);
+            die();
+        }
     }
 
     public function uninstall() {
@@ -150,7 +159,7 @@ class Pg24pay extends PaymentModule
             }
         }
 
-        $url  = 'index.php?controller=AdminModules&configure=pg24pay&tab_module=payments_gateways&module_name=pg24pay';
+        $url  = 'index.php?controller=AdminModules&configure=pg24pay';
         $url .= '&token='.Tools::getAdminTokenLite('AdminModules');
 
         $this->context->smarty->assign(array(
