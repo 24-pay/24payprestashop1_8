@@ -61,6 +61,7 @@ class Pg24payPaymentModuleFrontController extends ModuleFrontController
             'PAY24_NOTIFY' => Configuration::get('PAY24_NOTIFY'),
             'PAY24_NOTIFY_EMAIL' => Configuration::get('PAY24_NOTIFY_EMAIL'),
             'PAY24_NOTIFY_CLIENT' => Configuration::get('PAY24_NOTIFY_CLIENT'),
+            'PAY24_SAVE_TRANSACTION_EMAIL' => Configuration::get('PAY24_SAVE_TRANSACTION_EMAIL'),
             'PAY24_MODULE_DEBUG' => Configuration::get('PAY24_MODULE_DEBUG'),
         ));
         

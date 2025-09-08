@@ -112,6 +112,17 @@
                         </span>
                     </div>
 
+                    <div class="form-group">
+                        <label for="PAY24_SAVE_TRANSACTION_EMAIL">{l s='Send offline payment link in case of no response or declined payment' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <span class="switch prestashop-switch fixed-width-lg">
+                            <input type="radio" name="PAY24_SAVE_TRANSACTION_EMAIL" id="PAY24_SAVE_TRANSACTION_EMAIL_on" value="1" {if $PAY24_SAVE_TRANSACTION_EMAIL eq '1'}checked="checked"{/if}/>
+                            <label for="PAY24_SAVE_TRANSACTION_EMAIL_on">{l s='Yes' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <input type="radio" name="PAY24_SAVE_TRANSACTION_EMAIL" id="PAY24_SAVE_TRANSACTION_EMAIL_off" value="0" {if $PAY24_SAVE_TRANSACTION_EMAIL eq '0'}checked="checked"{/if}/>
+                            <label for="PAY24_SAVE_TRANSACTION_EMAIL_off">{l s='No' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                            <a class="slide-button btn"></a>
+                        </span>
+                    </div>
+
                     <legend>{l s='ADVANCE SETTING' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</legend>
 
                     <div class="form-group">

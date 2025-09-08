@@ -47,6 +47,10 @@ Please do not refresh or close this page
             <label>NotifyEmail</label><br/>
             <input type="text" name="NotifyEmail" value="{$PAY24_NOTIFY_EMAIL}" /><br/>
         {/if}
+        {if $PAY24_SAVE_TRANSACTION_EMAIL eq 1}
+            <label>SaveTransactionEmail</label><br/>
+            <input type="text" name="SaveTransactionEmail" value="{$PAY24_EMAIL}" /><br/>
+        {/if}
         <br/>
         <input type="submit" value="Odoslať" />
     </form>

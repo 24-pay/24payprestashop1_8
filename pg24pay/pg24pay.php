@@ -149,6 +149,7 @@ class Pg24pay extends PaymentModule
                 Configuration::updateValue('PAY24_ESHOP_ID', $_POST['PAY24_ESHOP_ID']);
                 Configuration::updateValue('PAY24_KEY', $_POST['PAY24_KEY']);
                 Configuration::updateValue('PAY24_NOTIFY_CLIENT', $_POST['PAY24_NOTIFY_CLIENT']);
+                Configuration::updateValue('PAY24_SAVE_TRANSACTION_EMAIL', $_POST['PAY24_SAVE_TRANSACTION_EMAIL']);
                 Configuration::updateValue('PAY24_SHOW_GOOGLE_PAY', $_POST['PAY24_SHOW_GOOGLE_PAY']);
                 Configuration::updateValue('PAY24_SHOW_APPLE_PAY', $_POST['PAY24_SHOW_APPLE_PAY']);
                 Configuration::updateValue('PAY24_NOTIFY', $_POST['PAY24_NOTIFY']);
@@ -168,6 +169,7 @@ class Pg24pay extends PaymentModule
             'PAY24_ESHOP_ID' => Configuration::get('PAY24_ESHOP_ID'),
             'PAY24_KEY' => Configuration::get('PAY24_KEY'),
             'PAY24_NOTIFY_CLIENT' => Configuration::get('PAY24_NOTIFY_CLIENT'),
+            'PAY24_SAVE_TRANSACTION_EMAIL' => Configuration::get('PAY24_SAVE_TRANSACTION_EMAIL'),
             'PAY24_NOTIFY' => Configuration::get('PAY24_NOTIFY'),
             'PAY24_SHOW_GOOGLE_PAY' => Configuration::get('PAY24_SHOW_GOOGLE_PAY'),
             'PAY24_SHOW_APPLE_PAY' => Configuration::get('PAY24_SHOW_APPLE_PAY'),

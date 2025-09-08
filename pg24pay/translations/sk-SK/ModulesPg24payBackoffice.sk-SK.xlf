@@ -82,6 +82,11 @@
         <target>Chcete dostávať notifikačný email o platbe z 24-pay</target>
         <note>Line: </note>
       </trans-unit>
+      <trans-unit id="6225da7b850761c50fde4f05f487ee99">
+        <source>Send offline payment link in case of no response or declined payment</source>
+        <target>Odoslať odkaz na offline platbu v prípade platby bez odpovede alebo zamietnutej platby</target>
+        <note>Line: </note>
+      </trans-unit>
       <trans-unit id="75fd9e2aecec3c37b453c73596d7b7c0">
         <source>Email for notification</source>
         <target>Notifikačný email</target>
