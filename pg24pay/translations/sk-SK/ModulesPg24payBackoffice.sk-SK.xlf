@@ -87,6 +87,11 @@
         <target>Odoslať odkaz na offline platbu v prípade platby bez odpovede alebo zamietnutej platby</target>
         <note>Line: </note>
       </trans-unit>
+      <trans-unit id="c822c9eae7ae06c8b78fa8f596d1ea1b">
+        <source>Include cart and shipping, required only for the pay later payment method</source>
+        <target>Zahrnúť košík a dopravu, povinné iba v prípade platobnej metódy na splátky</target>
+        <note>Line: </note>
+      </trans-unit>
       <trans-unit id="75fd9e2aecec3c37b453c73596d7b7c0">
         <source>Email for notification</source>
         <target>Notifikačný email</target>

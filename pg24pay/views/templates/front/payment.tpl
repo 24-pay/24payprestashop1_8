@@ -51,6 +51,9 @@ Please do not refresh or close this page
             <label>SaveTransactionEmail</label><br/>
             <input type="text" name="SaveTransactionEmail" value="{$PAY24_EMAIL}" /><br/>
         {/if}
+        {if $PAY24_CART eq 1}
+            <input type="hidden" name="Cart" value="{$PAY24_CART_CONTENT}" /><br/>
+        {/if}
         <br/>
         <input type="submit" value="Odoslať" />
     </form>

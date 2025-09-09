@@ -23,6 +23,7 @@ class Pg24payInstall{
         Configuration::updateValue('PAY24_NOTIFY_EMAIL', '');
         Configuration::updateValue('PAY24_NOTIFY_CLIENT', '0');
         Configuration::updateValue('PAY24_SAVE_TRANSACTION_EMAIL', '0');
+        Configuration::updateValue('PAY24_CART', '0');
         Configuration::updateValue('PAY24_SHOW_GOOGLE_PAY', '0');
         Configuration::updateValue('PAY24_SHOW_APPLE_PAY', '0');
         Configuration::updateValue('PAY24_ESHOP_ID', '11111111');
@@ -41,6 +42,7 @@ class Pg24payInstall{
         Configuration::deleteByName('PAY24_NOTIFY_EMAIL');
         Configuration::deleteByName('PAY24_NOTIFY_CLIENT');
         Configuration::deleteByName('PAY24_SAVE_TRANSACTION_EMAIL');
+        Configuration::deleteByName('PAY24_CART');
         Configuration::deleteByName('PAY24_ESHOP_ID');
         Configuration::deleteByName('PAY24_MODULE_DEBUG');
         Configuration::deleteByName('PAY24_REPAY');

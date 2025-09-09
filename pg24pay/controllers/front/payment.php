@@ -62,6 +62,8 @@ class Pg24payPaymentModuleFrontController extends ModuleFrontController
             'PAY24_NOTIFY_EMAIL' => Configuration::get('PAY24_NOTIFY_EMAIL'),
             'PAY24_NOTIFY_CLIENT' => Configuration::get('PAY24_NOTIFY_CLIENT'),
             'PAY24_SAVE_TRANSACTION_EMAIL' => Configuration::get('PAY24_SAVE_TRANSACTION_EMAIL'),
+            'PAY24_CART' => Configuration::get('PAY24_CART'),
+            'PAY24_CART_CONTENT' => $this->get_cart_json_base64($this->context->cart),
             'PAY24_MODULE_DEBUG' => Configuration::get('PAY24_MODULE_DEBUG'),
         ));
         
@@ -81,4 +83,45 @@ class Pg24payPaymentModuleFrontController extends ModuleFrontController
         return $order;
     }
 
+    private function get_cart_json_base64($cart)
+    {
+        if (!$cart || !($cart instanceof Cart)) {
+            return null;
+        }
+
+        $deliveryName = '';
+        $deliveryPrice = 0;
+
+        // Carrier
+        $carrier = new Carrier($cart->id_carrier, $this->context->language->id);
+        if (Validate::isLoadedObject($carrier)) {
+            $deliveryName  = $carrier->name;
+            $deliveryPrice = $cart->getOrderTotal(true, Cart::ONLY_SHIPPING);
+        }
+
+        $items = [];
+        $products = $cart->getProducts();
+
+        foreach ($products as $product) {
+            $items[] = [
+                'itemName'        => $product['name'],
+                'itemDescription' => isset($product['description_short']) ? strip_tags($product['description_short']) : '',
+                'quantity'        => (int) $product['cart_quantity'],
+                'itemPrice'       => number_format(
+                    (float) $product['price_wt'],
+                    2,
+                    '.',
+                    ''
+                ),
+            ];
+        }
+
+        $data = [
+            'deliveryName'  => $deliveryName,
+            'deliveryPrice' => number_format((float) $deliveryPrice, 2, '.', ''),
+            'items'         => $items,
+        ];
+
+        return base64_encode(json_encode($data, JSON_UNESCAPED_UNICODE));
+    }
 }
