@@ -52,8 +52,23 @@
                     </div>
 
                     <div class="form-group">
-                        <label>{l s='E-ESHOP ID' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <label>{l s='E-ESHOP ID EUR' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
                         <input type="text" name="PAY24_ESHOP_ID" value="{$PAY24_ESHOP_ID}"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{l s='E-ESHOP ID CZK' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <input type="text" name="PAY24_ESHOP_ID_CZK" value="{$PAY24_ESHOP_ID_CZK}"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{l s='E-ESHOP ID HUF' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <input type="text" name="PAY24_ESHOP_ID_HUF" value="{$PAY24_ESHOP_ID_HUF}"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>{l s='E-ESHOP ID PLN' mod='pg24pay' d='Modules.Pg24pay.Backoffice'}</label>
+                        <input type="text" name="PAY24_ESHOP_ID_PLN" value="{$PAY24_ESHOP_ID_PLN}"/>
                     </div>
 
                     <div class="form-group">

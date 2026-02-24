@@ -11,17 +11,20 @@ class Pg24paySign {
     public $mid;
     public $eshopid;
     public $key;
-    
+    public $currency;
+
     
     private $_mode = "CBC";
     private $_cipher;
     private $_paddingType;
     private $iv;
+
     
-    function __construct() {
+    function __construct($currency) {
+        $this->currency = $currency;
         $this->debug =  Configuration::get('PAY24_DEBUG');
         $this->mid = Configuration::get('PAY24_MID');
-        $this->eshopid =  Configuration::get('PAY24_ESHOP_ID');
+        $this->eshopid =  Configuration::get('PAY24_ESHOP_ID' . $this->currencySuffix());
         $this->key =  Configuration::get('PAY24_KEY');
         
         /* SIGN GENERATOR SETTING */
@@ -72,6 +75,12 @@ class Pg24paySign {
     private function getHexKey(){
         return pack("H*" , $this->key );
     }
-    
+
+    private function currencySuffix()
+    {
+        return in_array($this->currency, ["HUF", "CZK", "PLN"])
+            ? "_" . $this->currency
+            : "";
+    }
     
 }

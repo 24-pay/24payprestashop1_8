@@ -14,7 +14,7 @@ include_once _PS_MODULE_DIR_.$this->name.'/core/pg24pay_sign.php';
 class Pg24payRequest {
     private $signGenerator;
     function __construct() {
-        $this->signGenerator = new Pg24paySign();
+        $this->signGenerator = new Pg24paySign('EUR');
     }
     
     public function getServiceDomain(){

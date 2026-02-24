@@ -38,11 +38,6 @@ class Pg24payOrderFromOrder {
 
     function __construct($orderId, $link){
 
-        $this->signGenerator = new Pg24paySign();
-
-        $this->mid = $this->signGenerator->mid;
-        $this->eshopId = $this->signGenerator->eshopid;
-
         $objOrder = new Order($orderId);
 
         $customer = new Customer($objOrder->id_customer);
@@ -50,6 +45,12 @@ class Pg24payOrderFromOrder {
         $country = new Country($address->id_country);
         $language = new Language($objOrder->id_lang);
         $currency = new Currency($objOrder->id_currency);
+
+        $this->signGenerator = new Pg24paySign($currency->iso_code);
+
+        $this->mid = $this->signGenerator->mid;
+        $this->eshopId = $this->signGenerator->eshopid;
+
 
         $this->msTxnId = Cart::getCartIdByOrderId($orderId);
 

@@ -38,15 +38,15 @@ class Pg24payOrder {
 
     function __construct($cart, $link){
 
-        $this->signGenerator = new Pg24paySign();
-        $this->mid = $this->signGenerator->mid;
-        $this->eshopId = $this->signGenerator->eshopid;
-
         $customer = new Customer($cart->id_customer);
         $address = new Address($cart->id_address_invoice);
         $country = new Country($address->id_country);
         $language = new Language($cart->id_lang);
         $currency = new Currency($cart->id_currency);
+
+        $this->signGenerator = new Pg24paySign($currency->iso_code);
+        $this->mid = $this->signGenerator->mid;
+        $this->eshopId = $this->signGenerator->eshopid;
 
         $this->msTxnId = $cart->id;
 

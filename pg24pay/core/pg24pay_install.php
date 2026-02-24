@@ -27,6 +27,9 @@ class Pg24payInstall{
         Configuration::updateValue('PAY24_SHOW_GOOGLE_PAY', '0');
         Configuration::updateValue('PAY24_SHOW_APPLE_PAY', '0');
         Configuration::updateValue('PAY24_ESHOP_ID', '11111111');
+        Configuration::updateValue('PAY24_ESHOP_ID_CZK', '33333333');
+        Configuration::updateValue('PAY24_ESHOP_ID_HUF', '66666666');
+        Configuration::updateValue('PAY24_ESHOP_ID_PLN', '77777777');
         Configuration::updateValue('PAY24_MODULE_DEBUG', '0');
         Configuration::updateValue('PAY24_REPAY', '1');
         Configuration::updateValue('PAY24_LOG', '1');
@@ -44,6 +47,9 @@ class Pg24payInstall{
         Configuration::deleteByName('PAY24_SAVE_TRANSACTION_EMAIL');
         Configuration::deleteByName('PAY24_CART');
         Configuration::deleteByName('PAY24_ESHOP_ID');
+        Configuration::deleteByName('PAY24_ESHOP_ID_CZK');
+        Configuration::deleteByName('PAY24_ESHOP_ID_HUF');
+        Configuration::deleteByName('PAY24_ESHOP_ID_PLN');
         Configuration::deleteByName('PAY24_MODULE_DEBUG');
         Configuration::deleteByName('PAY24_REPAY');
         Configuration::deleteByName('PAY24_LOG');

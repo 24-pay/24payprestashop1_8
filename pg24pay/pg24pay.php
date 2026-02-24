@@ -147,6 +147,9 @@ class Pg24pay extends PaymentModule
                 Configuration::updateValue('PAY24_DEBUG', $_POST['PAY24_DEBUG']);
                 Configuration::updateValue('PAY24_MID', $_POST['PAY24_MID']);
                 Configuration::updateValue('PAY24_ESHOP_ID', $_POST['PAY24_ESHOP_ID']);
+                Configuration::updateValue('PAY24_ESHOP_ID_CZK', $_POST['PAY24_ESHOP_ID_CZK']);
+                Configuration::updateValue('PAY24_ESHOP_ID_PLN', $_POST['PAY24_ESHOP_ID_PLN']);
+                Configuration::updateValue('PAY24_ESHOP_ID_HUF', $_POST['PAY24_ESHOP_ID_HUF']);
                 Configuration::updateValue('PAY24_KEY', $_POST['PAY24_KEY']);
                 Configuration::updateValue('PAY24_NOTIFY_CLIENT', $_POST['PAY24_NOTIFY_CLIENT']);
                 Configuration::updateValue('PAY24_SAVE_TRANSACTION_EMAIL', $_POST['PAY24_SAVE_TRANSACTION_EMAIL']);
@@ -168,6 +171,9 @@ class Pg24pay extends PaymentModule
             'PAY24_DEBUG' => Configuration::get('PAY24_DEBUG'),
             'PAY24_MID' => Configuration::get('PAY24_MID'),
             'PAY24_ESHOP_ID' => Configuration::get('PAY24_ESHOP_ID'),
+            'PAY24_ESHOP_ID_CZK' => Configuration::get('PAY24_ESHOP_ID_CZK'),
+            'PAY24_ESHOP_ID_PLN' => Configuration::get('PAY24_ESHOP_ID_PLN'),
+            'PAY24_ESHOP_ID_HUF' => Configuration::get('PAY24_ESHOP_ID_HUF'),
             'PAY24_KEY' => Configuration::get('PAY24_KEY'),
             'PAY24_NOTIFY_CLIENT' => Configuration::get('PAY24_NOTIFY_CLIENT'),
             'PAY24_SAVE_TRANSACTION_EMAIL' => Configuration::get('PAY24_SAVE_TRANSACTION_EMAIL'),

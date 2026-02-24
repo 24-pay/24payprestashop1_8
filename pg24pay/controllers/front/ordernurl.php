@@ -36,7 +36,7 @@ class Pg24payOrdernurlModuleFrontController extends ModuleFrontController
 
             if ($nurl->validateSign()){
                 if ($nurl->result=="OK"){
-					
+
 					$orderObj = new Order($orderId);
 					$orderObj->setInvoice(true);
 					
