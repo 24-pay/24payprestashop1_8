@@ -1,9 +1,9 @@
 # 24payprestashop1_8
 24pay plugin for Prestashop ver 1.7.6 + and 8.2.1
 
-Current version 1.0.2
+Current version 1.1.0
 
-= Released  = [09.09.2025]
+= Released  = [25.02.2026]
 = ver 1.0.2 = [09.09.2025]
 = ver 1.0.1 = [25.04.2023]
 = ver 1.0.0 = [23.11.2022]
